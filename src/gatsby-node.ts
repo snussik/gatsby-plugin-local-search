@@ -1,6 +1,10 @@
 import path from 'path'
 import fs from 'fs'
 import lunr from 'lunr'
+require('lunr-languages/lunr.stemmer.support.js')(lunr);
+require('lunr-languages/lunr.ru.js')(lunr);
+
+
 import FlexSearch from 'flexsearch'
 import {
   GatsbyNode,
@@ -52,6 +56,8 @@ const createLunrIndexExport = (
     indexFields ?? documents.length > 0 ? Object.keys(documents[0]) : []
 
   const index = lunr(function () {
+    //@ts-ignore
+    this.use(lunr.ru);
     this.ref(ref)
     fields.forEach((field) => this.field(field))
     documents.forEach((doc) => this.add(doc))

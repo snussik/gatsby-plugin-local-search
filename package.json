@@ -41,6 +41,7 @@
     "flexsearch": "^0.6.32",
     "lodash": "^4.17.19",
     "lunr": "^2.3.8",
+    "lunr-languages": "^1.4.0",
     "pascal-case": "^3.1.1"
   },
   "peerDependencies": {
