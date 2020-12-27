@@ -1,5 +1,7 @@
 # gatsby-plugin-local-search
 
+Russian language support added
+
 Gatsby plugin for providing client-side search for data available in Gatsby's
 GraphQL layer using a variety of engines.
 

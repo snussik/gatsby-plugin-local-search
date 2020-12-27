@@ -75,16 +75,6 @@
       "@babel/plugin-proposal-nullish-coalescing-operator"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "prettier": {
     "semi": false,
     "singleQuote": true,
